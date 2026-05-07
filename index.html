@@ -727,41 +727,79 @@
 
 </main>
 <footer>
-          <div class="container">
-            <div class="row"></div>
-            <div class="row center justify">
-              <div class="col l3 s12">
-                <br>
-                <img src="./images/dream_jobs_logo.png" style="width: 200px" alt="dream jobs.in brand logo">
-              </div>
-              <div class="col l3 offset-l1 s12">
-                <ul>
-                  <li>USA</li>
-                  <li><a href="tel:+14752661215">+1(475) 266-1215</a></li>
-                  <li><a href="mailto:contact@dreamjobs.in">contact@dreamjobs.in</a></li>
-                  <li><a href="#about-dream-jobs.in" class="header-label">About Us</a></li>
-                  <li><a href="#why-us" class="header-label">Why Us</a></li>
-                </ul>
-              </div>
-              <div class="col l3 offset-l1 s12">
-                <ul>
-                  <li>India</li>
-                  <li><a href="tel:+9118008906607">1800-890-6607</li>
-                  <li><a href="mailto:info@dreamjobs.in">info@dreamjobs.in</li>
-                  <li><a href="index.html?slide=1" class="header-label">Recruiters On Demand</a></li>
-                  <li><a href="index.html?slide=2" class="header-label">Talent Management</a></li>
-                  <li><a href="index.html?slide=3" class="header-label">Recruitment & Staffing</a></li>
-                  <li><a href="index.html?slide=4" class="header-label">Contractual Staffing</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © Copyright <span style="color: #1a73e8;">dream</span>jobs</a>.in
-            </div>
-          </div>
-</footer>    
+  <div class="container" style="max-width: 95%;">
+  <div class="row footer-flex">
+
+    <!-- Logo -->
+    <div class="footer-block">
+      <img src="./images/dream_jobs_logo.png" style="width:170px;">
+    </div>
+
+    <!-- USA -->
+    <div class="footer-block">
+      <ul>
+        <li><b>USA</b></li>
+        <li><a href="tel:+14752661215">+1 (475) 266-1215</a></li>
+        <li><a href="mailto:contact@dreamjobs.in">contact@dreamjobs.in</a></li>
+        <li><a href="#about-dream-jobs.in">About Us</a></li>
+        <li><a href="#why-us">Why Us</a></li>
+      </ul>
+    </div>
+
+    <!-- India -->
+    <div class="footer-block">
+      <ul>
+        <li><b>India</b></li>
+        <li><a href="tel:+9118008906607">1800-890-6607</a></li>
+        <li><a href="mailto:info@dreamjobs.in">info@dreamjobs.in</a></li>
+        <li><a href="index.html?slide=1">Recruiters On Demand</a></li>
+        <li><a href="index.html?slide=2">Talent Management</a></li>
+      </ul>
+    </div>
+
+    <!-- Companies (RIGHT SIDE CLEAN) -->
+    <div class="footer-block">
+      <ul>
+        <li><b>Our businesses</b></li>
+        <li class="company">
+  <a href="https://technozis.com" target="_blank">
+    <img src="./images/technozis_logo.png" alt="Technozis Logo">
+    <span>Technozis</span>
+  </a>
+</li>
+
+<li class="company">
+  <a href="https://findr.ae/" target="_blank">
+    <img src="./images/findr_logo.jpeg" alt="Findr Logo">
+    <span>Findr</span>
+  </a>
+</li>
+
+        <li class="company">
+  <a href="https://www.hemkey.com/" target="_blank">
+    <img src="./images/hemkey-icon-logo.png" alt="Hemkey Logo">
+    <span>Hemkey</span>
+  </a>
+</li>
+
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+      <!-- Spacer (IMPORTANT for symmetry) -->
+      <div class="col l2 hide-on-small-only"></div>
+
+    </div>
+  </div>
+
+  <div class="footer-copyright">
+    <div class="container center-align">
+      ©CopyRight <span style="color:#1a73e8;">DreamJobs</span>.in
+    </div>
+  </div>
+</footer>
 <script>
 
 
@@ -902,6 +940,85 @@ img {vertical-align: middle;}
 .active, .dot:hover {
   background-color: #717171;
 }
+footer {
+  font-family: 'Lato', 'Noto Sans JP', 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #202124;
+}
+
+footer ul {
+  padding: 0;
+  margin: 0;
+}
+
+footer li {
+  list-style: none;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+footer b {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+footer a {
+  color: #202124;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #1a73e8;
+}
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 30px 0;
+  flex-wrap: wrap;
+}
+
+.footer-block {
+  min-width: 180px;
+}
+
+.footer-block ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-block li {
+  list-style: none;
+  margin-bottom: 6px;
+}
+
+.company a {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  gap: 10px;
+}
+
+.company img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+
+  padding: 6px;                 
+  background: #ffffff;          
+  border: 1px solid #e0e0e0;    
+  border-radius: 6px;           
+}
+.company {
+  margin-bottom: 10px;
+}
+
+.company a:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
 
   h2{
     font-size: 42px;
@@ -1014,7 +1131,32 @@ img {vertical-align: middle;}
   .text-right{
     order: 2;
   }
+.company a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  color: #202124;
+}
 
+.company img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.company span {
+  line-height: 32px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+ul li {
+  list-style: none;
+  margin-bottom: 6px;
+}
   
 
   .flex-2 {
@@ -1246,11 +1388,12 @@ img {vertical-align: middle;}
   display: block;
 }
 
-.menu__item:
-
-.menu {
+.menu__item {
   position: relative;
-  z-index: 10;
+  display: block;
+  outline: none;
+  margin: 0 0 1.5em;
+  line-height: 1;
 }
 
 .menu__item {
